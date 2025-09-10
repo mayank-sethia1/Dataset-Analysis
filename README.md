@@ -1,4 +1,3 @@
-Data Analytics Report Generator
 This command-line tool analyzes user session and order data from CSV files to generate a comprehensive analytics report. It performs a funnel conversion analysis, calculates the distribution of user intents, and checks for violations of the order cancellation policy.
 The final output includes a detailed JSON file and two data visualizations.
 Features
@@ -23,7 +22,6 @@ Execute the script from your terminal, providing paths to the input data files a
 Command Structure:
 python evo.py --events <path_to_events.csv> --messages <path_to_messages.csv> --orders <path_to_orders.csv> --out <output_directory_path>
 
-
 Example:
 If your CSV files are in the same directory as the script, you can run:
 python evo.py \
@@ -31,7 +29,6 @@ python evo.py \
   --messages ./messages.csv \
   --orders ./orders.csv \
   --out ./output/
-
 
 The script will create the output directory if it doesn't already exist and place the generated files inside it.
 Output Files
@@ -45,3 +42,5 @@ funnel.png
 A grouped bar chart that visually compares the user conversion journey on mobile versus desktop devices.
 intents.png
 A horizontal bar chart displaying the percentage share of the top 10 most common user intents.
+
+
